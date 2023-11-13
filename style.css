@@ -1,0 +1,536 @@
+body {
+  background: radial-gradient(circle, #252B35, #202124);
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0% 10% 0% 10%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*////////// Text and headings //////////*/
+h1 {
+  text-align: left;
+  color: white;
+  font-family: Arial, san-serif;
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: white;
+  font-family: Arial, san-serif;
+  font-size: 28px;
+}
+
+h3 {
+  color: white;
+  font-family: Arial, san-serif;
+  font-size: 25px;
+}
+
+h4 {
+  color: white;
+  font-family: Arial, san-serif;
+  font-size: 16px;
+}
+
+p {
+  color: white;
+  font-family: Arial, san-serif;
+  font-size: 20px;
+}
+
+li {
+  color: white;
+  font-size: 20px;
+}
+
+a {
+  font-family: Arial, san-serif;
+}
+
+/*////////// Classes //////////*/
+.icon {
+  padding: 0px 10px;
+  height: 45px;
+  width: auto;
+}
+
+.index-content-box {
+  text-align: center;
+  padding: 0% 4% 4% 0%;
+  width: 100%;
+}
+
+.double-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 4%;
+  text-align: left;
+}
+
+.single-box {
+  display: flex;
+  flex-direction: column;
+  margin: 4%;
+  text-align: left;
+}
+
+.single-boxcv {
+  width: 100%;
+  margin: 10% 0px 0% 0px;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.backgroundimage-blob {
+  background-image: url(IMG/blobbackground.svg);
+  background-position: left bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+
+.backgroundimage-midline-cv {
+  background-image: url(IMG/CV/midline.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+
+.modalButton {
+  margin: 1%;
+  height: 40px;
+  width: 40px;
+  color: none;
+}
+
+.projects-icon {
+  background-image: url(IMG/icon/IconProjects.svg);
+}
+
+.highlight {
+  background: linear-gradient(360deg, #662246, #865C73);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlightgray {
+  background: linear-gradient(360deg, #ffffff, #585858);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.workexperiencehead {
+  justify-content: center;
+  text-align: left;
+  width: 110%;
+}
+
+.p-padding {
+  padding: 2% 0% 0% 7%;
+}
+
+.projects-modal-buttons {
+  margin: 0% 0% 2% 0%;
+}
+
+/*///////////////////////////////////// Modal ///////////////////////////////////////////*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #212328;
+  margin: 5% auto;
+  padding: 1px;
+  border: 1px solid #888;
+  width: fit-content;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#iframeProjects {
+  width: 800px;
+  height: 650px;
+}
+
+#iframeCv {
+  width: 1350px;
+  height: 950px;
+}
+
+#iframeSmatrollen {
+  width: 1350px;
+  height: 950px;
+}
+
+/*////////// Sections //////////*/
+#IconEducation {
+  padding: 0% 5% 0% 0%;
+}
+
+#IconWork {
+  padding: 0% 5% 0% 0%;
+}
+
+#stylesandcolor {
+  display: flex;
+  flex-direction: column;
+}
+
+#main {
+  margin: 10% 0% 2% 0%;
+}
+
+#intro {
+  width: 52%;
+}
+
+#pitchtext {
+  width: 60%;
+  padding: 0% 8%;
+}
+
+#headercv {
+  margin: 5% 0% 0% 0%;
+  display: flex;
+}
+
+#workexperience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  align-items: baseline;
+  margin: 0% 15% 0% 0%;
+}
+
+#workexperiencehead {
+  display: flex;
+  align-self: center;
+  justify-content: left;
+  width: 110%;
+}
+
+#educationhead {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  align-content: center;
+  width: 110%;
+  margin: 22% 0% 0% 0%;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0% 0% 0% 21%;
+}
+
+#introduction {
+  text-align: right;
+  margin: 0% 2% 0% 0%;
+}
+
+#cv-intro {
+  text-align: left;
+  width: 800px;
+}
+
+#insights-smatrollen {
+  margin-top: 10%;
+  width: 100%;
+}
+
+#p-desing {
+  padding: 0% 0% 0% 4%;
+}
+
+#phonenumber {
+  color: white;
+  font-family: Arial, san-serif;
+  font-size: 20px;
+}
+
+#projectsmodal {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 92%;
+    padding: 0% 10% 0% 10%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #profilepic {
+    width: 50%;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: Arial, san-serif;
+    font-size: 35px;
+  }
+  #workexperience {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    margin: 0% 0% 0% 0%;
+  }
+  #education {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    margin: 0% 0% 0% 0%;
+  }
+  .backgroundimage-midline-cv {
+    background-size: 0%;
+  }
+  #cv-intro {
+    text-align: left;
+    width: 100%;
+    margin: 0% 0% 10% 0%;
+  }
+  .index-content-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0% 0% 2% 0%;
+    width: 100%;
+  }
+  #intro {
+    width: 100%;
+  }
+  #pitchtext {
+    width: 100%;
+  }
+}
+@media (min-width: 759px) and (max-width: 1600px) {
+  .icon {
+    padding: 0px 5px;
+    height: 35px;
+    width: auto;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4% 0% 0% 0%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #profilepic {
+    width: 20%;
+  }
+  h1 {
+    text-align: left;
+    color: white;
+    font-family: Arial, san-serif;
+    font-size: 30px;
+  }
+  h2 {
+    color: white;
+    font-family: Arial, san-serif;
+    font-size: 25px;
+  }
+  p {
+    color: white;
+    font-family: Arial, san-serif;
+    font-size: 18px;
+  }
+  #workexperience {
+    display: flex;
+  }
+  #educationhead {
+    display: flex;
+    align-self: center;
+    padding: 0% 5% 0% 0%;
+  }
+  #education {
+    display: flex;
+  }
+  .backgroundimage-midline-cv {
+    background-size: 25%;
+  }
+  #cv-intro {
+    text-align: left;
+    width: 50%;
+    margin: 0% 0% 10% 0%;
+  }
+  .index-content-box {
+    text-align: center;
+    padding: 0% 0% 2% 0%;
+    width: 100%;
+  }
+  #intro {
+    width: 50%;
+  }
+  #pitchtext {
+    width: 70%;
+  }
+  #iframeCv {
+    width: 1150px;
+    height: 710px;
+  }
+  #toolsused {
+    width: 90%;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
